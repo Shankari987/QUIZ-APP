@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QuizApp</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="container">
+ 
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <h1>QuizApp</h1>
+      <p>Test your knowledge</p>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+ 
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="hidden">
+      <p id="question-number">Question 1 of 10</p>
+      <h2 id="question-text"></h2>
+ 
+      <div id="options-container"></div>
+ 
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+ 
+    <!-- Result Screen -->
+    <div id="result-screen" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p id="score-text"></p>
+      <button id="restart-btn">Try Again</button>
+    </div>
+ 
+  </div>
+ 
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+ 
+
